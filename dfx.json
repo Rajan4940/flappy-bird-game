@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "rajanproj_backend": {
+      "main": "src/rajanproj_backend/main.mo",
+      "type": "motoko"
+    },
+    "rajanproj_frontend": {
+      "dependencies": [
+        "rajanproj_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/rajanproj_frontend/src/index.html"
+      },
+      "source": [
+        "src/rajanproj_frontend/assets",
+        "dist/rajanproj_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
